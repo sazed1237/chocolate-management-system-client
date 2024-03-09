@@ -22,7 +22,7 @@ function App() {
     }).then((result) => {
 
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/chocolates/${id}`, {
+        fetch(`https://chocolate-management-system-server-beta.vercel.app/chocolates/${id}`, {
           method: "DELETE"
         })
           .then(res => res.json())

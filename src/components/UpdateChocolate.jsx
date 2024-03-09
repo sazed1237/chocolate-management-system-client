@@ -17,7 +17,7 @@ const UpdateChocolate = () => {
         const updateChocolate = { name, country, category }
         console.log(updateChocolate)
 
-        fetch(`http://localhost:5000/chocolates/${_id}`, {
+        fetch(`https://chocolate-management-system-server-beta.vercel.app/chocolates/${_id}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

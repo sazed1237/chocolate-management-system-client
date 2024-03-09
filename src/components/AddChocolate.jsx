@@ -16,7 +16,7 @@ const AddChocolate = () => {
         const newChocolate = { name, country, category, photo }
         console.log(newChocolate)
 
-        fetch('http://localhost:5000/chocolates', {
+        fetch('https://chocolate-management-system-server-beta.vercel.app/chocolates', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
